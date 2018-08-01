@@ -7,94 +7,164 @@
 </head>
 <body>
 <header>
-    <nav>
-        <img src="https://www.google.com.ua/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj0jdy-37rcAhUBFiwKHeauDxEQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F636626097300206386%2F&psig=AOvVaw2hrOVHubDX22aDe8grvKzc&ust=1532625025897474"
-             alt="logo">
-        <a href="/store">Магазин</a>
-        <a href="/catalog">Каталог</a>
-        <a href="/withdrawal">Отзывы</a>
-        <button type="button">Заказать</button>
-        <h1>Аксессуары для котов<br>Коллекция W15</h1>
-    </nav>
     <div class="container">
-        <div>
-            <div class="element">
-                <img src="https://image1.jpeg">
-                <h3>Выбор</h3>
-                <p>Blah blah</p>
-            </div>
-            <div class="element">
-                <img src="https://image1.jpeg">
-                <h3>Качество</h3>
-                <p>Blah blah</p>
-            </div>
-            <div class="element">
-                <img src="https://image1.jpeg">
-                <h3>Безопастность</h3>
-                <p>Blah blah</p>
-            </div>
+
+        <div class="logo">
+            <a class="logo__link" href="#">
+                <img class="logo__image"
+                     src="https://www.google.com.ua/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj0jdy-37rcAhUBFiwKHeauDxEQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F636626097300206386%2F&psig=AOvVaw2hrOVHubDX22aDe8grvKzc&ust=1532625025897474"
+                     alt="">
+            </a>
         </div>
+
+        <nav>
+            <ul class="navigation"></ul>
+            <li class="navigation__list"><a class="navigation__item" href="/store">Магазин</a></li>
+            <li class="navigation__list"><a href="/catalog">Каталог</a></li>
+            <li class="navigation__list"><a href="/withdrawal">Отзывы</a></li>
+        </nav>
+
+        <div class="order">
+            <button class="order__button" type="button">Заказать</button>
+        </div>
+
+        <h1 class="title">Аксессуары для котов<br>Коллекция W15</h1>
+
     </div>
 </header>
-<main>
-    <section>
-        <div>
-            <h1>Немного теории</h1>
-            <button type="button">Справочник</button>
-        </div>
-        <article>
-            <div>
-                <h3>Окрас кошек и котов</h3>
-                <address>источник <a href="https://wikipedia.org.ua">Wikipedia</a></address>
-            </div>
-            <div>
-                <img src="htps://cat.jpeg">
-                <p>blah blah</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Кошкин дом</h3>
-                <address>источник <a href="https://wikipedia.org.ua">Wikipedia</a></address>
-            </div>
-            <div>
-                <img src="htps://cat.jpeg">
-                <p>blah blah</p>
-            </div>
-        </article>
-    </section>
+
+<section class="features">
     <div class="container">
-        <div>
-            <h1>Довольные коты</h1>
-            <button type="button">Отзывы</button>
-        </div>
-        <p>blah blah</p>
-    </div>
-    <section>
-        <div>
-            <h1>Популярные товары</h1>
-            <button type="button">Каталог</button>
-        </div>
-        <div class="d-flex">
-            <div class="flex__element p-2">
-                <div class="img">
-                    <img class="img-top" src="${product.imgRef}" alt="cat">
-                </div>
-                <div class="content">
-                    <div>
-                        <div class="name">name</div>
-                        <div class="price">price</div>
-                    </div>
-                    <div>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                    </div>
-                </div>
+        <div class="features__container">
+
+            <div class="features__container--chose">
+                <img class="features__image" src="https://image1.jpeg" alt="">
+                <h3 class="features__title">Выбор</h3>
+                <p class="features__description">Blah blah</p>
             </div>
+
+            <div class="features__container--quality">
+                <img class="features__image" src="https://image1.jpeg" alt="">
+                <h3 class="features__title">Качество</h3>
+                <p class="features__description">Blah blah</p>
+            </div>
+
+            <div class="features__container--safety">
+                <img class="features__image" src="https://image1.jpeg" alt="">
+                <h3 class="features__title">Безопастность</h3>
+                <p class="features__description">Blah blah</p>
+            </div>
+
         </div>
-        <div>
-            <h1>Прайс-лист на услуги</h1>
-            <table>
+    </div>
+</section>
+
+<main>
+    <div class="container">
+        <section class="articles">
+
+            <div class="articles__title">
+                <h1>Немного теории</h1>
+                <button type="button">Справочник</button>
+            </div>
+
+            <article class="article">
+                <div class="article__header">
+                    <h3 class="article__title">Окрас кошек и котов</h3>
+                    <address class="article__address">источник <a class="article__link" href="https://wikipedia.org.ua">Wikipedia</a>
+                    </address>
+                </div>
+                <div class="article__content">
+                    <img class="article__image" src="htps://cat.jpeg">
+                    <p class="article__text">blah blah</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__header">
+                    <h3 class="article__title">Кошкин дом</h3>
+                    <address class="article__address">источник <a class="article__link" href="https://wikipedia.org.ua">Wikipedia</a>
+                    </address>
+                </div>
+                <div class="article__content">
+                    <img class="article__image" src="htps://cat.jpeg">
+                    <p class="article__text">blah blah</p>
+                </div>
+            </article>
+
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="feedback">
+            <div class="feedback__header">
+                <h1 class="feedback__title">Довольные коты</h1>
+                <button class="feedback__button" type="button">Отзывы</button>
+            </div>
+            <div class="feedback__item">
+                <p class="feedback__text">blah blah</p>
+            </div>
+            <div class="feedback__item">
+                <p class="feedback__text">blah blah</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="store">
+            <div class="store__header">
+                <h1 class="store__title">Популярные товары</h1>
+                <button class="store__catalog" type="button">Каталог</button>
+            </div>
+            <div class="store__list">
+                <div class="store__item d-flex">
+                    <div class="item__image flex__element p-2">
+                        <img class="img-top" src="${product.imgRef}" alt="cat">
+                    </div>
+                    <div class="item__content">
+                        <div class="item__name">name</div>
+                        <div class="item__price">price</div>
+                        <div class="item__buttons">
+                            <button class="item__description" type="button">Описание</button>
+                            <button class="item__buy" type="button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="store__item d-flex">
+                    <div class="item__image flex__element p-2">
+                        <img class="img-top" src="${product.imgRef}" alt="cat">
+                    </div>
+                    <div class="item__content">
+                        <div class="item__name">name</div>
+                        <div class="item__price">price</div>
+                        <div class="item__buttons">
+                            <button class="item__description" type="button">Описание</button>
+                            <button class="item__buy" type="button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="store__item d-flex">
+                    <div class="item__image flex__element p-2">
+                        <img class="img-top" src="${product.imgRef}" alt="cat">
+                    </div>
+                    <div class="item__content">
+                        <div class="item__name">name</div>
+                        <div class="item__price">price</div>
+                        <div class="item__buttons">
+                            <button class="item__description" type="button">Описание</button>
+                            <button class="item__buy" type="button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="price">
+            <h1 class="price__title">Прайс-лист на услуги</h1>
+            <table class="price__table">
                 <tr>
                     <th>№</th>
                     <th>Название услуги</th>
@@ -108,88 +178,119 @@
                     <td>column4</td>
                 </tr>
             </table>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h1>Остались вопросы?</h1>
-            <pre>blah blah</pre>
-        </div>
-        <div>
-            <form action="/action">
-                <label for="name">ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА<br></label>
-                <input id="name" type="text" value="Имя 'Прозвище' Фамилия">
-                <br>
-                <div>
-                    <div>
-                        <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН<br></label>
-                        <input id="phone" type="text" value="8(XXX)XXX-XX-XX">
-                    </div>
-                    <div>
-                        <label for="email">ЭЛЕКТРОННАЯ ПОЧТА<br></label>
-                        <input id="email" type="text" value="E-mail">
-                    </div>
-                </div>
-                <label for="agree">Я согласен</label>
-                <input id="agree" type="checkbox">
-                <hr>
-                <label for="delivery"> ТЕМА ОБРАЩЕНИЯ<br></label>
-                <select id="delivery">
-                    <option value="">Условия доставки</option>
-                    <option value="Nova Poshta">Новая почта</option>
-                    <option value="Ukr Poshta">Укр Почта</option>
-                </select>
-                <br>
-                <label for="message">ТЕКСТ ОБРАЩЕНИЯ<br></label>
-                <textarea id="message">Введите текст вашего обращения</textarea>
-                <br>
-                <input type="submit" value="ОТПРАВИТЬ">
-            </form>
-        </div>
-        <div>
-            <img src="cat" alt="cat">
-        </div>
-    </section>
-</main>
-<footer>
-    <div>
-        <img src="logo" alt="logo">
-        <button name="order">ЗАКАЗАТЬ</button>
+        </section>
     </div>
-    <hr>
-    <div>
-        <div>
-            <h4>Магазин</h4>
-            <ul>
-                <li><a href="/house">Домики</a></li>
-                <li><a href="/close">Одежда</a></li>
-                <li><a href="/glasses">Очки</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Отзывы</h4>
-            <ul>
-                <li><a href="/show">Показать</a></li>
-                <li><a href="/leave">Оставить</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Прайс-лист</h4>
-            <ul>
-                <li><a href="/download">Скачать прайс</a></li>
-            </ul>
-        </div>
-    </div>
-    <hr>
-    <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-            <div>Давайте дружить!</div>
-            <div>
-                <a href="#"><i class="fa fa-skype"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+
+    <div class="container">
+        <section class="questions">
+            <div class="questions__header">
+                <h1 class="header__title">Остались вопросы?</h1>
+                <pre class="header__text">blah blah</pre> <!--preformatting text-->
             </div>
-            <div>С &#10084 для HTML Academy</div>
+            <div class="questions__form">
+                <form class="form" action="/action">
+
+                    <div class="form__client">
+
+                        <label class="field__label--name" for="name">ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА<br></label>
+                        <input class="field__input--name" id="name" type="text" value="Имя 'Прозвище' Фамилия">
+
+                        <br>
+                        <label class="field__label--phone" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН<br></label>
+                        <input class="field__input--phone" id="phone" type="text" value="8(XXX)XXX-XX-XX">
+
+                        <br>
+                        <label class="field__label--email" for="email">ЭЛЕКТРОННАЯ ПОЧТА<br></label>
+                        <input class="field__input--email" id="email" type="text" value="E-mail">
+
+                        <br>
+                        <label class="field__label--agreement" for="agree">Я согласен</label>
+                        <input class="field__input--agreement" id="agree" type="checkbox">
+                    </div>
+
+                    <hr>
+
+                    <div class="form__question">
+                        <label class="delivery__title" for="delivery"> ТЕМА ОБРАЩЕНИЯ<br></label>
+                        <select class="delivery__section" id="delivery">
+                            <option value="">Условия доставки</option>
+                            <option value="Nova Poshta">Новая почта</option>
+                            <option value="Ukr Poshta">Укр Почта</option>
+                        </select>
+
+                        <br>
+
+                        <label class="message__label" for="message">ТЕКСТ ОБРАЩЕНИЯ<br></label>
+                        <textarea class="message__text" id="message">Введите текст вашего обращения</textarea>
+
+                        <div class="form__submit">
+                            <input class="question__submit" type="submit" value="ОТПРАВИТЬ">
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="questions__image">
+                <img class="questions__image--cat" src="cat" alt="cat">
+            </div>
+
+        </section>
+    </div>
+
+</main>
+
+<footer class="page__footer">
+    <div class="container">
+        <div class="footer__header">
+            <img class="header__image" src="logo" alt="logo">
+            <button class="header__button" name="order">ЗАКАЗАТЬ</button>
+        </div>
+
+        <hr>
+
+        <div class="footer__categories">
+            <div class="categories__list--store">
+                <h4 class="categories__title">Магазин</h4>
+                <nav class="navigation__store">
+                <ul class="list">
+                    <li class="list__item"><a class="item__link" href="/house">Домики</a></li>
+                    <li class="list__item"><a class="item__link" href="/close">Одежда</a></li>
+                    <li class="list__item"><a class="item__link" href="/glasses">Очки</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="categories__list--feedback">
+                <h4 class="categories__title">Отзывы</h4>
+                <nav class="navigation__feedback">
+                <ul class="list">
+                    <li class="list__item"><a class="item__link" href="/show">Показать</a></li>
+                    <li class="list__item"><a class="item__link" href="/leave">Оставить</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="categories__list--price">
+                <h4 class="categories__title">Прайс-лист</h4>
+                <nav class="navigation__price">
+                <ul class="list">
+                    <li class="list__item"><a class="item__link" href="/download">Скачать прайс</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer__bottom">
+            <div class="bottom__ending mb-5 flex-center">
+                <div class="bottom__text">Давайте дружить!</div>
+                <div class="social">
+                    <a class="social__link" href="#"><i class="fa fa-skype"></i></a>
+                    <a class="social__link" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="social__link" href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="bottom__heart">С &#10084 для HTML Academy</div>
+            </div>
         </div>
     </div>
 </footer>
