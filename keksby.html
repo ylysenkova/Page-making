@@ -17,11 +17,12 @@
             </a>
         </div>
 
-        <nav>
-            <ul class="navigation"></ul>
-            <li class="navigation__list"><a class="navigation__item" href="/store">Магазин</a></li>
-            <li class="navigation__list"><a href="/catalog">Каталог</a></li>
-            <li class="navigation__list"><a href="/withdrawal">Отзывы</a></li>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__element"><a class="navigation__item" href="/store">Магазин</a></li>
+                <li class="navigation__element"><a class="navigation__item" href="/catalog">Каталог</a></li>
+                <li class="navigation__element"><a class="navigation__item" href="/feedback">Отзывы</a></li>
+            </ul>
         </nav>
 
         <div class="order">
@@ -33,29 +34,27 @@
     </div>
 </header>
 
-<section class="features">
-    <div class="container">
-        <div class="features__container">
+<section class="features"> <!--when should be div first and when section first?-->
+    <div class="features__container">
 
-            <div class="features__container--chose">
-                <img class="features__image" src="https://image1.jpeg" alt="">
-                <h3 class="features__title">Выбор</h3>
-                <p class="features__description">Blah blah</p>
-            </div>
-
-            <div class="features__container--quality">
-                <img class="features__image" src="https://image1.jpeg" alt="">
-                <h3 class="features__title">Качество</h3>
-                <p class="features__description">Blah blah</p>
-            </div>
-
-            <div class="features__container--safety">
-                <img class="features__image" src="https://image1.jpeg" alt="">
-                <h3 class="features__title">Безопастность</h3>
-                <p class="features__description">Blah blah</p>
-            </div>
-
+        <div class="features__container--chose">
+            <img class="features__image" src="https://image1.jpeg" alt="">
+            <h3 class="features__title">Выбор</h3>
+            <p class="features__description">Blah blah</p>
         </div>
+
+        <div class="features__container--quality">
+            <img class="features__image" src="https://image1.jpeg" alt="">
+            <h3 class="features__title">Качество</h3>
+            <p class="features__description">Blah blah</p>
+        </div>
+
+        <div class="features__container--safety">
+            <img class="features__image" src="https://image1.jpeg" alt="">
+            <h3 class="features__title">Безопастность</h3>
+            <p class="features__description">Blah blah</p>
+        </div>
+
     </div>
 </section>
 
@@ -63,9 +62,9 @@
     <div class="container">
         <section class="articles">
 
-            <div class="articles__title">
-                <h1>Немного теории</h1>
-                <button type="button">Справочник</button>
+            <div class="articles__header">
+                <h1 class="header__title">Немного теории</h1>
+                <button class="header__guide" type="button">Справочник</button>
             </div>
 
             <article class="article">
@@ -75,7 +74,7 @@
                     </address>
                 </div>
                 <div class="article__content">
-                    <img class="article__image" src="htps://cat.jpeg">
+                    <img class="article__image" src="htps://cat.jpeg" alt="">
                     <p class="article__text">blah blah</p>
                 </div>
             </article>
@@ -87,7 +86,7 @@
                     </address>
                 </div>
                 <div class="article__content">
-                    <img class="article__image" src="htps://cat.jpeg">
+                    <img class="article__image" src="htps://cat.jpeg" alt="">
                     <p class="article__text">blah blah</p>
                 </div>
             </article>
@@ -119,7 +118,7 @@
             <div class="store__list">
                 <div class="store__item d-flex">
                     <div class="item__image flex__element p-2">
-                        <img class="img-top" src="${product.imgRef}" alt="cat">
+                        <img class="img-top" src="https://product.imgRef" alt="cat">
                     </div>
                     <div class="item__content">
                         <div class="item__name">name</div>
@@ -133,7 +132,7 @@
 
                 <div class="store__item d-flex">
                     <div class="item__image flex__element p-2">
-                        <img class="img-top" src="${product.imgRef}" alt="cat">
+                        <img class="img-top" src="https://product.imgRef" alt="cat">
                     </div>
                     <div class="item__content">
                         <div class="item__name">name</div>
@@ -147,7 +146,7 @@
 
                 <div class="store__item d-flex">
                     <div class="item__image flex__element p-2">
-                        <img class="img-top" src="${product.imgRef}" alt="cat">
+                        <img class="img-top" src="https://product.imgRef" alt="cat">
                     </div>
                     <div class="item__content">
                         <div class="item__name">name</div>
@@ -253,28 +252,28 @@
             <div class="categories__list--store">
                 <h4 class="categories__title">Магазин</h4>
                 <nav class="navigation__store">
-                <ul class="list">
-                    <li class="list__item"><a class="item__link" href="/house">Домики</a></li>
-                    <li class="list__item"><a class="item__link" href="/close">Одежда</a></li>
-                    <li class="list__item"><a class="item__link" href="/glasses">Очки</a></li>
-                </ul>
+                    <ul class="list">
+                        <li class="list__item"><a class="item__link" href="/house">Домики</a></li>
+                        <li class="list__item"><a class="item__link" href="/close">Одежда</a></li>
+                        <li class="list__item"><a class="item__link" href="/glasses">Очки</a></li>
+                    </ul>
                 </nav>
             </div>
             <div class="categories__list--feedback">
                 <h4 class="categories__title">Отзывы</h4>
                 <nav class="navigation__feedback">
-                <ul class="list">
-                    <li class="list__item"><a class="item__link" href="/show">Показать</a></li>
-                    <li class="list__item"><a class="item__link" href="/leave">Оставить</a></li>
-                </ul>
+                    <ul class="list">
+                        <li class="list__item"><a class="item__link" href="/show">Показать</a></li>
+                        <li class="list__item"><a class="item__link" href="/leave">Оставить</a></li>
+                    </ul>
                 </nav>
             </div>
             <div class="categories__list--price">
                 <h4 class="categories__title">Прайс-лист</h4>
                 <nav class="navigation__price">
-                <ul class="list">
-                    <li class="list__item"><a class="item__link" href="/download">Скачать прайс</a></li>
-                </ul>
+                    <ul class="list">
+                        <li class="list__item"><a class="item__link" href="/download">Скачать прайс</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -289,7 +288,7 @@
                     <a class="social__link" href="#"><i class="fa fa-facebook"></i></a>
                     <a class="social__link" href="#"><i class="fa fa-instagram"></i></a>
                 </div>
-                <div class="bottom__heart">С &#10084 для HTML Academy</div>
+                <div class="bottom__heart">С &#10084; для HTML Academy</div>
             </div>
         </div>
     </div>
